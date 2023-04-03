@@ -18,10 +18,10 @@ To install the Integrator Project, follow these steps:
 3. Download the latest MySQL driver from the following link: https://dev.mysql.com/downloads/connector/j/ 
 4. Once you have downloaded the MySQL driver, add the JAR file to your project in Apache NetBeans by following these steps:
 
--Right-click on the "Libraries" section in the "Projects" view.
--Select "Add JAR/Folder".
--Browse to the location where you saved the MySQL connector JAR file and select it.
--This will configure your project to use the MySQL driver.
+- Right-click on the "Libraries" section in the "Projects" view.
+- Select "Add JAR/Folder".
+- Browse to the location where you saved the MySQL connector JAR file and select it.
+- This will configure your project to use the MySQL driver.
 
 #Adding the Database
 
