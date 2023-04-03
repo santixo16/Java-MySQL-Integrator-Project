@@ -52,17 +52,17 @@ SELECT * FROM negocio;
 
 INSERT INTO empleados (id_empleado, primer_nombre_empleado, segundo_nombre_empleado, primer_apellido_empleado, 
     segundo_apellido_empleado, telefono_empleado, direccion_empleado) VALUES
-    (0001, 'Santiago', 'Enrique', 'Hernandez', 'Contreras', '3013247112', 'Cra 13 #153-80'),
-    (0002, 'David', 'Nicolas', 'Chilito', 'Joaqui', '3016267412', 'Dg 45 bis sur #13h-18'),
-    (0003, 'Santiago', '', 'Baquero', 'Hurtado', '3003546114', 'Desconocida'); --INSERTAMOS ESTOS VALORES A LA TABLA DE EMPLEADOS
+    (0001, 'Santiago', 'Enrique', 'Hernandez', 'Contreras', '5555555', 'direccion 1'),
+    (0002, 'David', 'Nicolas', 'Chilito', 'Joaqui', '5545555', 'direccion 2'),
+    (0003, 'Santiago', '', 'Baquero', 'Hurtado', '22244444', 'Desconocida'); --INSERTAMOS ESTOS VALORES A LA TABLA DE EMPLEADOS
 
 SELECT * FROM empleados;
 
 INSERT INTO cliente (id_cliente, primer_nombre_cliente, segundo_nombre_cliente, primer_apellido_cliente, 
     segundo_apellido_cliente, telefono_cliente, direccion_cliente, fecha_cita) VALUES
-    (0001, 'Enrique', 'Leonardo', 'Martinez', 'Correa', '3013247112', 'Cra 13 #153-80', '02/12/2022'),
-    (0002, 'Cristo', 'David', 'Manchado', 'Fulano', '3016267412', 'Dg 45 bis sur #13h-18', '03/12/2022'),
-    (0003, 'Abel', 'Fernando', 'Jurado', 'Zabaleta', '3003546114', 'Cra 56b #45-67', '04/12/2022'), 
-    (0004, 'William', 'Jose', 'Mendoza', 'Uribe', '45528902', 'Cra 45 #56-67', '02/12/2022'); --INSERTAMOS ESTOS VALORES A LA TABLA DE EMPLEADOS
+    (0001, 'Enrique', 'Leonardo', 'Martinez', 'Correa', '3013247112', 'direccion 1', '02/12/2022'),
+    (0002, 'Cristo', 'David', 'Manchado', 'Fulano', '3016267412', 'direccion 2', '03/12/2022'),
+    (0003, 'Abel', 'Fernando', 'Jurado', 'Zabaleta', '3003546114', 'direccion 3', '04/12/2022'), 
+    (0004, 'William', 'Jose', 'Mendoza', 'Uribe', '45528902', 'direccion 4', '02/12/2022'); --INSERTAMOS ESTOS VALORES A LA TABLA DE EMPLEADOS
 
 SELECT * FROM cliente;
