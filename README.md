@@ -28,7 +28,7 @@ To install the Integrator Project, follow these steps:
 To add the database that has already been created, follow these steps:
 
 1. Go to the "Database" folder and copy the path of the file 'techcare.sql'.
-2. Open <a href="https://www.youtube.com/watch?v=NRPAur8m7M0" target="_blank">XAMPP</a>Control Panel.
+2. Open <a href="https://www.youtube.com/watch?v=NRPAur8m7M0" target="_blank">XAMPP</a> Control Panel.
 3. Start the MySQL service and the Apache service.
 4. In the XAMPP Control Panel, click on the "Shell" button.
 5. This will open a command prompt. To start the MariaDB service, use the following command:
