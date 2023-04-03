@@ -1,12 +1,12 @@
-#Java with MySQL-Integrator Project
+# Java with MySQL-Integrator Project
 
-#Description
+# Description
 
 This project aims to integrate a Java application with a MySQL database. It features a user-friendly interface that enables you to access a previously created database and perform operations such as adding, updating, and deleting records.
 
 The MySQL database included in this project contains information related to a tech support business, including tables for clients, employees, and physical business information.
 
-#Windows Installation
+# Windows Installation
 
 To install the Integrator Project, follow these steps:
 
@@ -48,4 +48,4 @@ Make sure to replace C:\path_to_script with the actual path to the techcare.sql 
 
 Or, you can go to http://localhost/phpmyadmin/index.php in your web browser and check if the "techcare" database is listed in the left-hand side menu.
 
-#Finally, run the project
+# Finally, run the project
