@@ -42,7 +42,7 @@ To add the database that has already been created, follow these steps:
 
 Make sure to replace C:\path_to_script with the actual path to the techcare.sql file.
 
-7. That's it! You should now have a database named "techcare", which is the database that we will be using with our Java app. You can confirm this by using the following command:
+8. That's it! You should now have a database named "techcare", which is the database that we will be using with our Java app. You can confirm this by using the following command:
 
 ```SHOW DATABASES;``` 
 
