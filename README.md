@@ -5,6 +5,8 @@
 This project aims to integrate a Java application with a MySQL database. It features a user-friendly interface that enables you to access a previously created database and perform operations such as adding, updating, and deleting records.
 
 The MySQL database included in this project contains information related to a tech support business, including tables for clients, employees, and physical business information.
+## Recomendation
+- This project was developed using JDK version 17. We recommend using the same version or a later version of the JDK.
 
 # Windows Installation
 
@@ -15,7 +17,7 @@ To install the Integrator Project, follow these steps:
 ```git clone https://github.com/santixo16/Java-MySQL-Integrator-Project``` 
 
 2. Open the project in your preferred IDE. We recommend using Apache NetBeans version 12.5 or later.
-3. Download the latest MySQL driver from the following link: https://dev.mysql.com/downloads/connector/j/ 
+3. Download the MySQL driver from the following link (we recommend using 'mysql-connector-j-8.0.32.jar'): https://dev.mysql.com/downloads/connector/j/
 4. Once you have downloaded the MySQL driver, add the JAR file to your project in Apache NetBeans by following these steps:
 
 - Right-click on the "Libraries" section in the "Projects" view.
