@@ -12,7 +12,7 @@ To install the Integrator Project, follow these steps:
 
 1. Clone the repository to your local machine by running the following command in your command prompt or terminal:
 
-```git clone link``` 
+```git clone https://github.com/santixo16/Java-MySQL-Integrator-Project``` 
 
 2. Open the project in your preferred IDE. We recommend using Apache NetBeans version 12.5 or later.
 3. Download the latest MySQL driver from the following link: https://dev.mysql.com/downloads/connector/j/ 
