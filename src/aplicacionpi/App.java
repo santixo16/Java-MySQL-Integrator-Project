@@ -5,13 +5,12 @@ public class App {
         
         System.out.println("Bienvenid@");
         Login log = new Login();
-        log.setVisible(true);
-        log.setLocationRelativeTo(null);
+        log.setVisible(true);        
         
-        ConnectionDB conexion = new ConnectionDB("techcare");
+        /*ConnectionDB conexion = new ConnectionDB("techcare");
         
         conexion.conectar();
-        conexion.desconectar();
+        conexion.desconectar();*/
 
     }
 }
