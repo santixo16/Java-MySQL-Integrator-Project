@@ -4,20 +4,16 @@
  */
 package aplicacionpi;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
 /**
  *
  * @author santi
  */
-public class login extends javax.swing.JPanel {
+public class Login extends javax.swing.JPanel {
 
     /**
      * Creates new form login
      */
-    public login() {
+    public Login() {
         initComponents();
     }
 
@@ -127,4 +123,5 @@ public class login extends javax.swing.JPanel {
     private javax.swing.JTextField userField;
     private javax.swing.JLabel userLabel;
     // End of variables declaration//GEN-END:variables
+
 }
