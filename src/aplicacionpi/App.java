@@ -3,9 +3,10 @@ package aplicacionpi;
 public class App {
     public static void main(String[] args) throws Exception {
         
-        /*System.out.println("Bienvenid@");
+        System.out.println("Bienvenid@");
         Login log = new Login();
-        log.setVisible(true);*/
+        log.setVisible(true);
+        log.setLocationRelativeTo(null);
         
         ConnectionDB conexion = new ConnectionDB("techcare");
         
