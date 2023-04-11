@@ -16,7 +16,7 @@ USE techcare;/*ABRIMOS NUESTRO TABLA O ENTRAMOS */
 CREATE TABLE usuarios(
     id_user INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(30) NOT NULL UNIQUE,
-    password VARCHAR(64) NOT NULL
+    password CHAR(64) NOT NULL
 );
 
 CREATE table empleados(/*CREAREMOS UNA TABLA PARA EL EMPLEADO DONDE TENDREMOS LA INFORMACION DE ESTE */
@@ -30,7 +30,7 @@ CREATE table empleados(/*CREAREMOS UNA TABLA PARA EL EMPLEADO DONDE TENDREMOS LA
 );/*CERRAMOS NUESTRA TABLA DE EMPLEADOS CON SUS CONTENIDOS */
 
 /*INSERT INTO usuarios (username, password) VALUES ('santi', SHA2('prueba', 256));*/
-INSERT INTO usuarios (username, password) VALUES ('santi', 'prueba');
+INSERT INTO usuarios (username, password) VALUES ('santi', 'prueba'),('admin', 'admin');
 
 
 CREATE TABLE clientes(
