@@ -29,8 +29,8 @@ CREATE table empleados(/*CREAREMOS UNA TABLA PARA EL EMPLEADO DONDE TENDREMOS LA
     direccion_empleado CHAR(30) NOT NULL/*LA ZONA DONDE VIVE NUESTRO EMPLEADO PARA LLAMARLO*/
 );/*CERRAMOS NUESTRA TABLA DE EMPLEADOS CON SUS CONTENIDOS */
 
-INSERT INTO usuarios (username, password) VALUES ('santi', SHA2('prueba', 256));
-/*INSERT INTO usuarios (username, password) VALUES ('santi', 'prueba');*/
+/*INSERT INTO usuarios (username, password) VALUES ('santi', SHA2('prueba', 256));*/
+INSERT INTO usuarios (username, password) VALUES ('santi', 'prueba'),('admin', 'admin');
 
 
 CREATE TABLE clientes(
