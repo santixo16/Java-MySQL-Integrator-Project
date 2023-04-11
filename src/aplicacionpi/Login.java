@@ -18,6 +18,7 @@ public class Login extends javax.swing.JFrame {
     
     ConnectionDB conexion = new ConnectionDB("techcare");        
     Connection con=conexion.conectar();
+   
 
     /**
      * Creates new form Login
