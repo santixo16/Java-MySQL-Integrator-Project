@@ -13,15 +13,14 @@ DROP DATABASE IF EXISTS techcare; --BORRAMOS LA BASE DE DATOS SI YA EXISTE PARA 
 CREATE DATABASE techcare;/*CREAMOS UNA TABLA PARA ALAMCENAR TODAS LAS DEMAS TABLAS QUE SE VAN A ALMACENAR*/
 USE techcare;/*ABRIMOS NUESTRO TABLA O ENTRAMOS */
 
-CREATE TABLE negocio(/*CREAMOS UNA TABLA DE NEGOCIO DONDE VAMOS A ALMACENAR LAS DIRECCIONE*/
-    correo VARCHAR(30) NOT NULL PRIMARY KEY,/*EL CORREO DONDE PODEMOS ENVIAR INFORMACION AL CLIENTE COMO A MIEMBROS DE LA TIENDA FISICA*/
-    direccion_negocio VARCHAR(20) NOT NULL,/*ES LA UBICACION DONDE ESTARA LA TIENDA FISICA PARA HACER ESTOS SOPORTES EN LA TIENDA*/
-    horario_atencion  VARCHAR(20) NOT NULL,/*SERA LAS HORAS QUE PONDRA VENIR LOS CLIENTES O LLAMAR PARA HACER ESTOS SOPORTES EN LA TIENDA O EN LA CASA O EMPRESA*/
-    telefono VARCHAR(13) NOT NULL /*EL NUMERO DONDE PODRAS CONTACTAR CON LA TIENDA PARA SOLICITAR EL SOPORTE EN LA TIENDA COMO EN SU CASA*/
-);/*CERRAMOS EL CONTENIDO QUE TENDRA NUESTRA TABLA DE NEGOCIO*/
+CREATE TABLE usuarios(
+    id_user INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(30) NOT NULL UNIQUE,
+    password CHAR(64) NOT NULL
+);
 
 CREATE table empleados(/*CREAREMOS UNA TABLA PARA EL EMPLEADO DONDE TENDREMOS LA INFORMACION DE ESTE */
-    id_empleado INT NOT NULL PRIMARY KEY,
+    id_empleado INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     primer_nombre_empleado VARCHAR(20) NOT NULL,/*SE GUARDA EL PRIMER NOMBRE PARA MEJORAR EL RENDIMIENTO DE ALMACENAMIENTO*/
     segundo_nombre_empleado VARCHAR(20) NOT NULL,/*SE GUARDA EL SEGUNDO NOMBRE PARA MEJORAR EL RENDIMIENTO DE ALMACENAMIENTO*/
     primer_apellido_empleado VARCHAR(20) NOT NULL,/*SE GUARDA EL PRIMER APELLIDO PARA MEJORAR EL RENDIMIENTO DE ALMACENAMIENTO*/
@@ -30,39 +29,40 @@ CREATE table empleados(/*CREAREMOS UNA TABLA PARA EL EMPLEADO DONDE TENDREMOS LA
     direccion_empleado CHAR(30) NOT NULL/*LA ZONA DONDE VIVE NUESTRO EMPLEADO PARA LLAMARLO*/
 );/*CERRAMOS NUESTRA TABLA DE EMPLEADOS CON SUS CONTENIDOS */
 
-CREATE TABLE clientes(/*CREAREMOS UNA TABLA QUE SE LLAME CLIENTE VA A CONTENER LA INFORMACION DE LOS CLIENTES*/
-    id_cliente INT NOT NULL PRIMARY KEY,/*SERA EL NUMERO DEL CLIENTE DONDE SE PODRA IDENTIFICARLO Y BUSCARLO MAS FACIL*/
-    primer_nombre_cliente VARCHAR(20) NOT NULL,/*SE ALMACENARA EL PRIMER NOMBRE DEL CLIENTE */
-    segundo_nombre_cliente VARCHAR(20) NOT NULL,/*SE ALMACENARA EL SEGUNDO NOMBRE DEL CLIENTE*/
-    primer_apellido_cliente VARCHAR(20) NOT NULL,/*SE ALAMACENARA EL PRIMER APELLIDO DEL CLIENTE*/
-    segundo_apellido_cliente VARCHAR(20) NOT NULL,/*SE ALMACENARA EL SEGUNDO APELLIDO DEL CLIENTE*/
-    telefono_cliente VARCHAR(13) NOT NULL,/*EL NUMERO DEL CLIENTE PARA LLAMARLO Y SABER DE LOS SOPORTES REALIZADOS*/
+INSERT INTO usuarios (username, password) VALUES ('santi', SHA2('prueba', 256));
+/*INSERT INTO usuarios (username, password) VALUES ('santi', 'prueba');*/
+
+
+CREATE TABLE clientes(
+    id_cliente INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    primer_nombre_cliente VARCHAR(20) NOT NULL,
+    segundo_nombre_cliente VARCHAR(20) NOT NULL,
+    primer_apellido_cliente VARCHAR(20) NOT NULL,
+    segundo_apellido_cliente VARCHAR(20) NOT NULL,
+    telefono_cliente VARCHAR(13) NOT NULL,
     direccion_cliente VARCHAR(30) NOT NULL,
-    fecha_cita VARCHAR(20)/*EL DIA QUE SE REALIZARA EL RESPECTIVO SOPORTE QUE A SOLICITADO*/
-);/*CERRAMOS LA TABLA CLIENTES DONDE SE ALMACENARA EL CONTENIDO DEL CLIENTE*/
+    correo_electronico VARCHAR(50) NOT NULL,
+    fecha_cita DATE
+);
 
-SHOW COLUMNS FROM negocio;/*SE MUESTRA EL CONTENIDO QUE SE TIENE EN ESTA TABLA DE NEGOCIO*/
 SHOW COLUMNS FROM empleados;/*SE MOSTRARA LA TABLA CON SU CONTENIDO DE EMPLEADOS*/
-SHOW COLUMNS FROM cliente;/*SE MOSTRARA LA TABLA DE CLIENTES DONDE LE PEDIMOS SU INFORMACION*/
+SHOW COLUMNS FROM clientes;/*SE MOSTRARA LA TABLA DE CLIENTES DONDE LE PEDIMOS SU INFORMACION*/
 
-INSERT INTO negocio (correo, direccion_negocio, horario_atencion, telefono) VALUES 
-    ('techcare@gmail.com', 'Cra. 15 #78-33', '7 am - 6 pm', '3013445634'); --INSERTAMOS ESTOS VALORES A LA TABLA DE NEGOCIO
-
-SELECT * FROM negocio;
-
-INSERT INTO empleados (id_empleado, primer_nombre_empleado, segundo_nombre_empleado, primer_apellido_empleado, 
+INSERT INTO empleados (primer_nombre_empleado, segundo_nombre_empleado, primer_apellido_empleado, 
     segundo_apellido_empleado, telefono_empleado, direccion_empleado) VALUES
-    (0001, 'Santiago', 'Enrique', 'Hernandez', 'Contreras', '5555555', 'direccion 1'),
-    (0002, 'David', 'Nicolas', 'Chilito', 'Joaqui', '5545555', 'direccion 2'),
-    (0003, 'Santiago', '', 'Baquero', 'Hurtado', '22244444', 'Desconocida'); --INSERTAMOS ESTOS VALORES A LA TABLA DE EMPLEADOS
+    ('Santiago', 'Enrique', 'Hernandez', 'Contreras', '5555555', 'direccion 1'),
+    ('David', 'Nicolas', 'Chilito', 'Joaqui', '5545555', 'direccion 2'),
+    ('Santiago', '', 'Baquero', 'Hurtado', '22244444', 'Desconocida');
+
 
 SELECT * FROM empleados;
 
-INSERT INTO clientes (id_cliente, primer_nombre_cliente, segundo_nombre_cliente, primer_apellido_cliente, 
-    segundo_apellido_cliente, telefono_cliente, direccion_cliente, fecha_cita) VALUES
-    (0001, 'Enrique', 'Leonardo', 'Martinez', 'Correa', '3013247112', 'direccion 1', '02/12/2022'),
-    (0002, 'Cristo', 'David', 'Manchado', 'Fulano', '3016267412', 'direccion 2', '03/12/2022'),
-    (0003, 'Abel', 'Fernando', 'Jurado', 'Zabaleta', '3003546114', 'direccion 3', '04/12/2022'), 
-    (0004, 'William', 'Jose', 'Mendoza', 'Uribe', '45528902', 'direccion 4', '02/12/2022'); --INSERTAMOS ESTOS VALORES A LA TABLA DE EMPLEADOS
+INSERT INTO clientes (primer_nombre_cliente, segundo_nombre_cliente, primer_apellido_cliente, 
+                      segundo_apellido_cliente, telefono_cliente, direccion_cliente, correo_electronico, fecha_cita) 
+VALUES ('Enrique', 'Leonardo', 'Martinez', 'Correa', '3013247112', 'direccion 1', 'enrique@mail.com', '2022-12-02'),
+       ('Cristo', 'David', 'Manchado', 'Fulano', '3016267412', 'direccion 2', 'cristo@mail.com', '2022-12-03'),
+       ('Abel', 'Fernando', 'Jurado', 'Zabaleta', '3003546114', 'direccion 3', 'abel@mail.com', '2022-12-04'), 
+       ('William', 'Jose', 'Mendoza', 'Uribe', '45528902', 'direccion 4', 'william@mail.com', '2022-12-02');
+
 
 SELECT * FROM clientes;
