@@ -51,16 +51,12 @@ public class ConnectionDB {
     */
     public Connection conectar () {
 
-        try {
-           
+        try {           
             conexion = DriverManager.getConnection(url + database, user, password);            
             System.out.println("Conexion EXITOSA a la base de datos: " + database);
-
-        } catch (SQLException e) {
-            
+        } catch (SQLException e) {            
             System.out.println("Conexion NO EXITOSA a la base de datos: " + database);
-            e.printStackTrace();
-        
+            e.printStackTrace();        
         }
 
         return conexion;
@@ -72,15 +68,11 @@ public class ConnectionDB {
     */
     public void desconectar(){
         try {
-
             conexion.close();
             System.out.println("Desconexion EXITOSA de la base de datos: " + database);
-
         } catch (SQLException e) {
-
             System.out.println("Desconexion NO EXITOSA de la base de datos: " + database);
             e.printStackTrace();
-
         }
     }
     
