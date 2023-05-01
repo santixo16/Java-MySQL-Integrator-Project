@@ -5,15 +5,6 @@ public class App {
         
         Login log = new Login();
         log.setVisible(true);
-        
-        /*System.out.println("Bienvenid@");
-        Login log = new Login();
-        log.setVisible(true);*/
-        
-        //ConnectionDB conexion = new ConnectionDB("techcare");
-        
-        
-        //conexion.desconectar();*/
 
     }
 }
