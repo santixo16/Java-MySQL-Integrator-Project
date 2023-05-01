@@ -25,9 +25,15 @@ public class MainMenu extends javax.swing.JFrame {
         Login log = new Login();
         log.setVisible(true);
         log.setSize(680, 480);
-        log.setLocationRelativeTo(null);
+        log.setLocationRelativeTo(null); 
         this.setTitle("TECHCARE");        
         this.dispose();
+    }
+    
+    public void showConsultWindow(){
+        ConsultarWindow consult = new ConsultarWindow();
+        consult.setVisible(true);
+        this.setVisible(false);
     }
 
     /**
@@ -120,7 +126,7 @@ public class MainMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void consult_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consult_btnActionPerformed
-        // TODO add your handling code here:
+        showConsultWindow();
     }//GEN-LAST:event_consult_btnActionPerformed
 
     private void logout_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logout_btnActionPerformed
