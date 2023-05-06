@@ -42,7 +42,7 @@ CREATE TABLE clientes(
     telefono_cliente VARCHAR(13) NOT NULL,
     direccion_cliente VARCHAR(30) NOT NULL,
     correo_electronico VARCHAR(50) NOT NULL,
-    fecha_cita DATE
+    fecha_cita DATE NOT NULL
 );
 
 SHOW COLUMNS FROM empleados;/*SE MOSTRARA LA TABLA CON SU CONTENIDO DE EMPLEADOS*/

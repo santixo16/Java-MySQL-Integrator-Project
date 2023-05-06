@@ -9,7 +9,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import javax.swing.JOptionPane;
 /**
  *
@@ -50,6 +53,8 @@ public class ConsultarCliente extends javax.swing.JFrame {
                 String direccion = rs.getString("direccion_cliente");
                 String email = rs.getString("correo_electronico");
                 LocalDate fechaCita = rs.getDate("fecha_cita").toLocalDate() ;
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+                String fechaCitaStr = fechaCita.format(formatter);                
                 
                 primerNombreField.setText(primerNombre);
                 segundoNombreField.setText(segundoNombre);
@@ -58,6 +63,7 @@ public class ConsultarCliente extends javax.swing.JFrame {
                 telefonoField.setText(telefono);
                 direccionField.setText(direccion);
                 emailField.setText(email);
+                fechaCitaField.setText(fechaCitaStr);
             }else{
                 JOptionPane.showMessageDialog(null, "No se encontró ningún cliente con el ID ingresado");
             }
@@ -105,7 +111,8 @@ public class ConsultarCliente extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel2.setText("EN CONSTRUCCION...");
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("CLIENTE");
 
         back_btn.setText("VOLVER");
         back_btn.addActionListener(new java.awt.event.ActionListener() {
@@ -217,10 +224,10 @@ public class ConsultarCliente extends javax.swing.JFrame {
                 .addContainerGap(230, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(searchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(202, 202, 202)
-                .addComponent(back_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35))
+                .addComponent(searchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(178, 178, 178)
+                .addComponent(back_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
