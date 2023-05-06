@@ -26,7 +26,9 @@ CREATE table empleados(/*CREAREMOS UNA TABLA PARA EL EMPLEADO DONDE TENDREMOS LA
     primer_apellido_empleado VARCHAR(20) NOT NULL,/*SE GUARDA EL PRIMER APELLIDO PARA MEJORAR EL RENDIMIENTO DE ALMACENAMIENTO*/
     segundo_apellido_empleado VARCHAR(20) NOT NULL,/*SE GUARDA EL SEGUNDO APELLIDO PARA MEJORAR EL RENDIMIENTO DE ALMACENAMIENTO*/
     telefono_empleado VARCHAR(13) NOT NULL,/*SE SOLICITARA EL NUMERO DEL EMPLEADOS POR POSIBLES LLAMADAS DE ATENCION O INFORMACION*/
-    direccion_empleado CHAR(30) NOT NULL/*LA ZONA DONDE VIVE NUESTRO EMPLEADO PARA LLAMARLO*/
+    direccion_empleado CHAR(30) NOT NULL,/*LA ZONA DONDE VIVE NUESTRO EMPLEADO PARA LLAMARLO*/
+    email_empleado VARCHAR(50) NOT NULL,
+    salario_empleado FLOAT NOT NULL
 );/*CERRAMOS NUESTRA TABLA DE EMPLEADOS CON SUS CONTENIDOS */
 
 /*INSERT INTO usuarios (username, password) VALUES ('santi', SHA2('prueba', 256));*/
@@ -49,10 +51,10 @@ SHOW COLUMNS FROM empleados;/*SE MOSTRARA LA TABLA CON SU CONTENIDO DE EMPLEADOS
 SHOW COLUMNS FROM clientes;/*SE MOSTRARA LA TABLA DE CLIENTES DONDE LE PEDIMOS SU INFORMACION*/
 
 INSERT INTO empleados (primer_nombre_empleado, segundo_nombre_empleado, primer_apellido_empleado, 
-    segundo_apellido_empleado, telefono_empleado, direccion_empleado) VALUES
-    ('Santiago', 'Enrique', 'Hernandez', 'Contreras', '5555555', 'direccion 1'),
-    ('David', 'Nicolas', 'Chilito', 'Joaqui', '5545555', 'direccion 2'),
-    ('Santiago', '', 'Baquero', 'Hurtado', '22244444', 'Desconocida');
+    segundo_apellido_empleado, telefono_empleado, direccion_empleado, email_empleado, salario_empleado) VALUES
+    ('Santiago', 'Enrique', 'Hernandez', 'Contreras', '5555555', 'direccion 1', 'sehernandezc@sanmateo.edu.co', 2200000),
+    ('David', 'Nicolas', 'Chilito', 'Joaqui', '5545555', 'direccion 2', 'dnchilito@sanmateo.edu.co', 2200000),
+    ('Santiago', '', 'Baquero', 'Hurtado', '22244444', 'Desconocida', 'sbaquero@sanmateo.edu.co', 2200000);
 
 
 SELECT * FROM empleados;

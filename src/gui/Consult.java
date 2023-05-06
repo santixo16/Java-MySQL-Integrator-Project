@@ -25,6 +25,12 @@ public class Consult extends javax.swing.JFrame {
         clienteWindow.setVisible(true);
         this.setVisible(false);
     }
+    
+    public void showConsultEmployeeWindow(){
+        ConsultarEmpleado empleadoWindow = new ConsultarEmpleado();
+        empleadoWindow.setVisible(true);
+        this.setVisible(false);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -91,7 +97,7 @@ public class Consult extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void consultEmployee_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultEmployee_btnActionPerformed
-        // TODO add your handling code here:
+        showConsultEmployeeWindow();
     }//GEN-LAST:event_consultEmployee_btnActionPerformed
 
     private void consultClient_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultClient_btnActionPerformed
