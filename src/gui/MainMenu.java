@@ -35,6 +35,12 @@ public class MainMenu extends javax.swing.JFrame {
         consult.setVisible(true);
         this.setVisible(false);
     }
+    
+    public void showModifyWindow(){
+        Modify modificar = new Modify();
+        modificar.setVisible(true);
+        this.setVisible(false);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -62,6 +68,11 @@ public class MainMenu extends javax.swing.JFrame {
         add_btn.setText("ADICIONAR");
 
         modify_btn.setText("MODIFICAR");
+        modify_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modify_btnActionPerformed(evt);
+            }
+        });
 
         consult_btn.setText("CONSULTAR");
         consult_btn.addActionListener(new java.awt.event.ActionListener() {
@@ -132,6 +143,10 @@ public class MainMenu extends javax.swing.JFrame {
     private void logout_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logout_btnActionPerformed
         logOut();
     }//GEN-LAST:event_logout_btnActionPerformed
+
+    private void modify_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modify_btnActionPerformed
+        showModifyWindow();
+    }//GEN-LAST:event_modify_btnActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
