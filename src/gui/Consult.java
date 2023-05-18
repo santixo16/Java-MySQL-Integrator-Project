@@ -44,11 +44,19 @@ public class Consult extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         consultEmployee_btn = new javax.swing.JButton();
         consultClient_btn = new javax.swing.JButton();
+<<<<<<< HEAD
+=======
+        goback_btn = new javax.swing.JButton();
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(680, 480));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+<<<<<<< HEAD
+=======
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         jLabel1.setText("¿QUÉ DESEA CONSULTAR?");
 
         consultEmployee_btn.setText("EMPLEADO");
@@ -65,10 +73,21 @@ public class Consult extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
+=======
+        goback_btn.setText("VOLVER");
+        goback_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                goback_btnActionPerformed(evt);
+            }
+        });
+
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -80,10 +99,28 @@ public class Consult extends javax.swing.JFrame {
                         .addGap(185, 185, 185)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(204, Short.MAX_VALUE))
+=======
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(185, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(165, 165, 165))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(255, 255, 255)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(consultEmployee_btn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(consultClient_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(goback_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(23, 23, 23)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(71, 71, 71)
@@ -91,6 +128,17 @@ public class Consult extends javax.swing.JFrame {
                 .addGap(65, 65, 65)
                 .addComponent(consultClient_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(148, Short.MAX_VALUE))
+=======
+                .addGap(48, 48, 48)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49)
+                .addComponent(consultEmployee_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(consultClient_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
+                .addComponent(goback_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27))
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         );
 
         pack();
@@ -104,10 +152,21 @@ public class Consult extends javax.swing.JFrame {
         showConsultClientWindow();
     }//GEN-LAST:event_consultClient_btnActionPerformed
 
+<<<<<<< HEAD
+=======
+    private void goback_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goback_btnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_goback_btnActionPerformed
+
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton consultClient_btn;
     private javax.swing.JButton consultEmployee_btn;
+<<<<<<< HEAD
+=======
+    private javax.swing.JButton goback_btn;
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

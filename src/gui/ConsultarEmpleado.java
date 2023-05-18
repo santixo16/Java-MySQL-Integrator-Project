@@ -16,7 +16,11 @@ import javax.swing.JOptionPane;
  */
 public class ConsultarEmpleado extends javax.swing.JFrame {
     
+<<<<<<< HEAD
     ConnectionDB conexion = new ConnectionDB("techcare");
+=======
+        ConnectionDB conexion = new ConnectionDB("techcare");
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
 
 
     /**
@@ -125,6 +129,10 @@ public class ConsultarEmpleado extends javax.swing.JFrame {
 
         jLabel3.setText("Primer nombre:");
 
+<<<<<<< HEAD
+=======
+        primerNombreField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         primerNombreField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 primerNombreFieldActionPerformed(evt);
@@ -133,6 +141,10 @@ public class ConsultarEmpleado extends javax.swing.JFrame {
 
         jLabel4.setText("Segundo nombre:");
 
+<<<<<<< HEAD
+=======
+        segundoNombreField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         segundoNombreField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 segundoNombreFieldActionPerformed(evt);
@@ -141,6 +153,10 @@ public class ConsultarEmpleado extends javax.swing.JFrame {
 
         jLabel5.setText("Primer apellido:");
 
+<<<<<<< HEAD
+=======
+        primerApellidoField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         primerApellidoField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 primerApellidoFieldActionPerformed(evt);
@@ -149,6 +165,10 @@ public class ConsultarEmpleado extends javax.swing.JFrame {
 
         jLabel6.setText("Segundo apellido:");
 
+<<<<<<< HEAD
+=======
+        segundoApellidoField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         segundoApellidoField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 segundoApellidoFieldActionPerformed(evt);
@@ -157,6 +177,10 @@ public class ConsultarEmpleado extends javax.swing.JFrame {
 
         jLabel7.setText("Teléfono:");
 
+<<<<<<< HEAD
+=======
+        telefonoField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         telefonoField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 telefonoFieldActionPerformed(evt);
@@ -165,6 +189,10 @@ public class ConsultarEmpleado extends javax.swing.JFrame {
 
         jLabel8.setText("Dirección:");
 
+<<<<<<< HEAD
+=======
+        direccionField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         direccionField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 direccionFieldActionPerformed(evt);
@@ -173,6 +201,10 @@ public class ConsultarEmpleado extends javax.swing.JFrame {
 
         jLabel9.setText("Salario:");
 
+<<<<<<< HEAD
+=======
+        salarioField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         salarioField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 salarioFieldActionPerformed(evt);
@@ -202,6 +234,10 @@ public class ConsultarEmpleado extends javax.swing.JFrame {
 
         jLabel10.setText("Email:");
 
+<<<<<<< HEAD
+=======
+        emailField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         emailField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 emailFieldActionPerformed(evt);

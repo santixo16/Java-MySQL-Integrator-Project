@@ -123,7 +123,11 @@ public class ConsultarCliente extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+<<<<<<< HEAD
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+=======
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("CONSULTAR CLIENTE");
 
@@ -136,7 +140,10 @@ public class ConsultarCliente extends javax.swing.JFrame {
 
         idLabel.setText("Cedula:");
 
+<<<<<<< HEAD
         idTextField.setBackground(new java.awt.Color(255, 255, 255));
+=======
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         idTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idTextFieldActionPerformed(evt);
@@ -145,7 +152,11 @@ public class ConsultarCliente extends javax.swing.JFrame {
 
         jLabel3.setText("Primer nombre:");
 
+<<<<<<< HEAD
         primerNombreField.setBackground(new java.awt.Color(255, 255, 255));
+=======
+        primerNombreField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         primerNombreField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 primerNombreFieldActionPerformed(evt);
@@ -161,7 +172,11 @@ public class ConsultarCliente extends javax.swing.JFrame {
 
         jLabel4.setText("Segundo nombre:");
 
+<<<<<<< HEAD
         segundoNombreField.setBackground(new java.awt.Color(255, 255, 255));
+=======
+        segundoNombreField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         segundoNombreField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 segundoNombreFieldActionPerformed(evt);
@@ -170,6 +185,7 @@ public class ConsultarCliente extends javax.swing.JFrame {
 
         jLabel5.setText("Primer apellido:");
 
+<<<<<<< HEAD
         primerApellidoField.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel6.setText("Segundo apellido:");
@@ -185,6 +201,23 @@ public class ConsultarCliente extends javax.swing.JFrame {
         jLabel8.setText("Dirección:");
 
         emailField.setBackground(new java.awt.Color(255, 255, 255));
+=======
+        primerApellidoField.setEditable(false);
+
+        jLabel6.setText("Segundo apellido:");
+
+        segundoApellidoField.setEditable(false);
+
+        jLabel7.setText("Teléfono:");
+
+        telefonoField.setEditable(false);
+
+        direccionField.setEditable(false);
+
+        jLabel8.setText("Dirección:");
+
+        emailField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         emailField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 emailFieldActionPerformed(evt);
@@ -193,7 +226,11 @@ public class ConsultarCliente extends javax.swing.JFrame {
 
         jLabel9.setText("Email:");
 
+<<<<<<< HEAD
         fechaCitaField.setBackground(new java.awt.Color(255, 255, 255));
+=======
+        fechaCitaField.setEditable(false);
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         fechaCitaField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fechaCitaFieldActionPerformed(evt);
@@ -214,6 +251,7 @@ public class ConsultarCliente extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(219, 219, 219)
@@ -252,6 +290,44 @@ public class ConsultarCliente extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(back_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(181, Short.MAX_VALUE))
+=======
+                .addGap(22, 22, 22)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(idLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(segundoNombreField)
+                            .addComponent(primerNombreField)
+                            .addComponent(idTextField)
+                            .addComponent(primerApellidoField)
+                            .addComponent(segundoApellidoField, javax.swing.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)
+                            .addComponent(telefonoField, javax.swing.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)
+                            .addComponent(direccionField, javax.swing.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)
+                            .addComponent(emailField, javax.swing.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)
+                            .addComponent(fechaCitaField, javax.swing.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(back_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(153, 153, 153)
+                        .addComponent(searchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 153, Short.MAX_VALUE)
+                        .addComponent(wipe_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(52, 52, 52))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(219, 219, 219)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

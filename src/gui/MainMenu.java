@@ -35,6 +35,7 @@ public class MainMenu extends javax.swing.JFrame {
         consult.setVisible(true);
         this.setVisible(false);
     }
+<<<<<<< HEAD
 
     public void showAdditionWindow(){
         Addition addition = new Addition();
@@ -42,6 +43,15 @@ public class MainMenu extends javax.swing.JFrame {
         this.setVisible(false);
     }
             
+=======
+    
+    public void showModifyWindow(){
+        Modify modificar = new Modify();
+        modificar.setVisible(true);
+        this.setVisible(false);
+    }
+
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -66,6 +76,7 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel1.setText("MENÚ PRINCIPAL");
 
         add_btn.setText("ADICIONAR");
+<<<<<<< HEAD
         add_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 add_btnActionPerformed(evt);
@@ -73,6 +84,15 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         modify_btn.setText("MODIFICAR");
+=======
+
+        modify_btn.setText("MODIFICAR");
+        modify_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modify_btnActionPerformed(evt);
+            }
+        });
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
 
         consult_btn.setText("CONSULTAR");
         consult_btn.addActionListener(new java.awt.event.ActionListener() {
@@ -144,9 +164,15 @@ public class MainMenu extends javax.swing.JFrame {
         logOut();
     }//GEN-LAST:event_logout_btnActionPerformed
 
+<<<<<<< HEAD
     private void add_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add_btnActionPerformed
         showAdditionWindow();
     }//GEN-LAST:event_add_btnActionPerformed
+=======
+    private void modify_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modify_btnActionPerformed
+        showModifyWindow();
+    }//GEN-LAST:event_modify_btnActionPerformed
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

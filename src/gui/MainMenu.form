@@ -91,14 +91,23 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="ADICIONAR"/>
           </Properties>
+<<<<<<< HEAD
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="add_btnActionPerformed"/>
           </Events>
+=======
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         </Component>
         <Component class="javax.swing.JButton" name="modify_btn">
           <Properties>
             <Property name="text" type="java.lang.String" value="MODIFICAR"/>
           </Properties>
+<<<<<<< HEAD
+=======
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modify_btnActionPerformed"/>
+          </Events>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
         </Component>
         <Component class="javax.swing.JButton" name="consult_btn">
           <Properties>

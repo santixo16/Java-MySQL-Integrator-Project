@@ -4,7 +4,10 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
             <name>AplicacionPI</name>
+<<<<<<< HEAD
             <explicit-platform explicit-source-supported="true"/>
+=======
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>

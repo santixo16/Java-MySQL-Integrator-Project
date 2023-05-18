@@ -181,6 +181,12 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="primerNombreField">
+<<<<<<< HEAD
+=======
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="primerNombreFieldActionPerformed"/>
       </Events>
@@ -191,6 +197,12 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="segundoNombreField">
+<<<<<<< HEAD
+=======
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="segundoNombreFieldActionPerformed"/>
       </Events>
@@ -201,6 +213,12 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="primerApellidoField">
+<<<<<<< HEAD
+=======
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="primerApellidoFieldActionPerformed"/>
       </Events>
@@ -211,6 +229,12 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="segundoApellidoField">
+<<<<<<< HEAD
+=======
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="segundoApellidoFieldActionPerformed"/>
       </Events>
@@ -221,6 +245,12 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="telefonoField">
+<<<<<<< HEAD
+=======
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="telefonoFieldActionPerformed"/>
       </Events>
@@ -231,6 +261,12 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="direccionField">
+<<<<<<< HEAD
+=======
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="direccionFieldActionPerformed"/>
       </Events>
@@ -241,6 +277,12 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="salarioField">
+<<<<<<< HEAD
+=======
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="salarioFieldActionPerformed"/>
       </Events>
@@ -275,6 +317,12 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="emailField">
+<<<<<<< HEAD
+=======
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailFieldActionPerformed"/>
       </Events>

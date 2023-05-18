@@ -46,6 +46,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
+<<<<<<< HEAD
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="219" max="-2" attributes="0"/>
@@ -94,6 +95,51 @@
                       </Group>
                   </Group>
                   <EmptySpace pref="181" max="32767" attributes="0"/>
+=======
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jLabel6" pref="118" max="32767" attributes="0"/>
+                              <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jLabel7" pref="118" max="32767" attributes="0"/>
+                              <Component id="jLabel8" pref="118" max="32767" attributes="0"/>
+                              <Component id="jLabel9" pref="118" max="32767" attributes="0"/>
+                              <Component id="jLabel10" pref="118" max="32767" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                  <Component id="idLabel" alignment="1" min="-2" pref="92" max="-2" attributes="0"/>
+                                  <Component id="jLabel3" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="segundoNombreField" max="32767" attributes="0"/>
+                              <Component id="primerNombreField" max="32767" attributes="0"/>
+                              <Component id="idTextField" max="32767" attributes="0"/>
+                              <Component id="primerApellidoField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="segundoApellidoField" alignment="0" pref="304" max="32767" attributes="0"/>
+                              <Component id="telefonoField" alignment="0" pref="304" max="32767" attributes="0"/>
+                              <Component id="direccionField" alignment="0" pref="304" max="32767" attributes="0"/>
+                              <Component id="emailField" alignment="0" pref="304" max="32767" attributes="0"/>
+                              <Component id="fechaCitaField" alignment="0" pref="304" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="back_btn" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
+                          <Component id="searchBtn" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace pref="153" max="32767" attributes="0"/>
+                          <Component id="wipe_btn" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="219" max="-2" attributes="0"/>
+                  <Component id="jLabel2" min="-2" pref="280" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
               </Group>
           </Group>
         </DimensionLayout>
@@ -162,7 +208,11 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+<<<<<<< HEAD
               <Font name="Dialog" size="20" style="1"/>
+=======
+              <Font name="Dialog" size="18" style="1"/>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="CONSULTAR CLIENTE"/>
@@ -182,11 +232,14 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="idTextField">
+<<<<<<< HEAD
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+=======
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="idTextFieldActionPerformed"/>
           </Events>
@@ -198,9 +251,13 @@
         </Component>
         <Component class="javax.swing.JTextField" name="primerNombreField">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+=======
+            <Property name="editable" type="boolean" value="false"/>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="primerNombreFieldActionPerformed"/>
@@ -221,9 +278,13 @@
         </Component>
         <Component class="javax.swing.JTextField" name="segundoNombreField">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+=======
+            <Property name="editable" type="boolean" value="false"/>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="segundoNombreFieldActionPerformed"/>
@@ -236,9 +297,13 @@
         </Component>
         <Component class="javax.swing.JTextField" name="primerApellidoField">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+=======
+            <Property name="editable" type="boolean" value="false"/>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
@@ -248,9 +313,13 @@
         </Component>
         <Component class="javax.swing.JTextField" name="segundoApellidoField">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+=======
+            <Property name="editable" type="boolean" value="false"/>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
@@ -260,16 +329,24 @@
         </Component>
         <Component class="javax.swing.JTextField" name="telefonoField">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+=======
+            <Property name="editable" type="boolean" value="false"/>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="direccionField">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+=======
+            <Property name="editable" type="boolean" value="false"/>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
@@ -279,9 +356,13 @@
         </Component>
         <Component class="javax.swing.JTextField" name="emailField">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+=======
+            <Property name="editable" type="boolean" value="false"/>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailFieldActionPerformed"/>
@@ -294,9 +375,13 @@
         </Component>
         <Component class="javax.swing.JTextField" name="fechaCitaField">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+=======
+            <Property name="editable" type="boolean" value="false"/>
+>>>>>>> e871aec4a36ca3765809722a6f00d20b413a1245
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fechaCitaFieldActionPerformed"/>
